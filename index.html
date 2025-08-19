@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light"> <!-- Default theme is light -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Time Converter Pro</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Theme Toggle Button -->
+<div class="theme-toggle-container">
+    <button class="btn" id="themeToggle">
+        <i class="bi bi-moon-stars-fill"></i>
+    </button>
+</div>
+
+<!-- Main container for the converters -->
+<div class="converter-container">
+    <!-- Converter 1: Minutes to Decimal -->
+    <div class="converter-sentence">
+        <input type="number" id="minutesInput" class="form-control-lg" value="15" autofocus>
+        <span>minutes is</span>
+        <span id="resultHours" class="fw-bold">0.25</span>
+        <span>hours.</span>
+        <button class="btn btn-ghost" id="copyHoursBtn" title="Copy Hours">
+            <i class="bi bi-clipboard"></i>
+        </button>
+    </div>
+<hr style="width: 50%;text-align: center;    margin-right: auto;margin-left: auto;color: #ee0000;" />
+    <!-- Converter 2: Decimal to Minutes -->
+    <div class="converter-sentence">
+        <input type="number" id="hoursInput" class="form-control-lg" value="1.50">
+        <span>hours is</span>
+        <span id="resultMinutes" class="fw-bold">90</span>
+        <span>minutes.</span>
+        <button class="btn btn-ghost" id="copyMinutesBtn" title="Copy Minutes">
+            <i class="bi bi-clipboard"></i>
+        </button>
+    </div>
+</div>
+
+<!-- Our JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
